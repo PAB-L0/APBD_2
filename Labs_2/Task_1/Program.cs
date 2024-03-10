@@ -11,3 +11,12 @@ static double average(int[] array)
         sum += element;
     return (double)sum / array.Length;
 }
+
+static int max(int[] array)
+{
+    var max = array[0];
+    for(var i = 1; i < array.Length; i++)
+        if(max < array[i])
+            max = array[i];
+    return max;
+}
