@@ -7,8 +7,8 @@ Console.WriteLine("3rd Modification");
 static double average(int[] array)
 {
     var sum = 0;
-    foreach(var element in array)
-        sum += element;
+    foreach(var value in array)
+        sum += value;
     return (double)sum / array.Length;
 }
 
